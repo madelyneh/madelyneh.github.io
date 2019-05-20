@@ -15,8 +15,10 @@
 		@include breakpoint(xsmall) {
 			html, body {
 				min-width: 320px;
+				
 			}
 		}
+		
 
 	body {
 		background: _palette(bg);

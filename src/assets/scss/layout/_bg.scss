@@ -7,6 +7,9 @@
 /* BG */
 
 	#bg {
+		
+
+
 		@include vendor('transform', 'scale(1.0)');
 		-webkit-backface-visibility: hidden;
 		position: fixed;
@@ -15,6 +18,8 @@
 		width: 100%;
 		height: 100vh;
 		z-index: 1;
+
+
 
 		&:before, &:after {
 			content: '';
@@ -51,16 +56,30 @@
 			// background: rgb(255,255,255);
 			// background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(239,101,96,0.9934348739495799) 100%);
 
-			background-position:	center;
+			background-position: center;
 			background-size:		cover;
 			background-repeat:		no-repeat;
 			z-index: 1;
+
+			
+		// @include breakpoint(xsmall) {
+		// 	background-position: flex;
+		// }
+		@include breakpoint(small) {
+			background-position: left;
+		}
+		
+		@include breakpoint(medium) {
+			background-position: right;
+		}
 		}
 
 		.body.is-article-visible & {
 			&:after {
 				@include vendor('transform', 'scale(1.0825)');
 				@include vendor('filter', 'blur(0.2rem)');
+				
+
 			}
 		}
 

@@ -38,5 +38,6 @@
 
 		&.page {
 			@include vendor('justify-content', 'flex-start');
+			
 		}
 	}
