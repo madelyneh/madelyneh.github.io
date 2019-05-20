@@ -32,12 +32,15 @@
 // Palette.
 	$palette: (
 		bg:							#000000,
+		bg-article:     #ffffff,
 		bg-alt:						#000000,
 		bg-overlay:					#ffffff13,
 		fg:							#ffffff,
 		fg-bold:					#ffffff,
 		fg-light:					rgba(255, 255, 255, 0.5),
 		border:						#81d8bea9,
+		underline:        rgb(239, 101, 96),
+		bodyColor:        #2f5496,
 		border-bg:				#ef6560c5,
 		border-bg-alt:				rgba(239, 101, 96, 0.062)
 	);
