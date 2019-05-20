@@ -46,7 +46,11 @@
 				'transform #{_duration(article)} ease-in-out',
 				'filter #{_duration(article)} ease-in-out'
 			));
-			background-image:		url('../../images/bg.jpg');
+			background-image:		url('../../images/black-and-white-dark-design-230659.jpg');
+
+			// background: rgb(255,255,255);
+			// background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(239,101,96,0.9934348739495799) 100%);
+
 			background-position:	center;
 			background-size:		cover;
 			background-repeat:		no-repeat;

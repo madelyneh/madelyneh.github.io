@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Dimension V2",
-    author: "Hunter Chang",
-    description: "A Gatsby.js V2 Starter based on Dimension by HTML5 UP"
+    title: "Madelyn Helton",
+    author: "Madelyn Helton",
+    description: "Madelyn Helton's Professional Portfolio"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -12,10 +12,10 @@ module.exports = {
         name: 'gatsby-starter-default',
         short_name: 'starter',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#ffffff',
+        theme_color: '#ffffff',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/myAvatar.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-sass',

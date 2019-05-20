@@ -18,7 +18,7 @@
 		background-image: -moz-radial-gradient(rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 55%);
 		background-image: -webkit-radial-gradient(rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 55%);
 		background-image: -ms-radial-gradient(rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 55%);
-		background-image: radial-gradient(rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 55%);
+		// background-image: radial-gradient(#2ba6b134 25%, rgba(0,0,0,0) 55%);
 		max-width: 100%;
 		text-align: center;
 
@@ -48,16 +48,23 @@
 		}
 
 		.logo {
-			width: 5.5rem;
-			height: 5.5rem;
-			line-height: 5.5rem;
+			width: 6.5rem;
+			height: 6.5rem;
+			line-height: 6.5rem;
 			border: solid _size(border-width) _palette(border);
 			border-radius: 100%;
+			overflow: hidden;
 
 			.icon {
 				&:before {
 					font-size: 2rem;
 				}
+			}
+			.main-logo > img {
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				// overflow: hidden;
 			}
 		}
 
@@ -141,6 +148,7 @@
 					width: _size(border-width);
 					height: 100%;
 					background: _palette(border);
+
 				}
 
 				ul {
