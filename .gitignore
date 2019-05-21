@@ -8,5 +8,5 @@ yarn.lock
 .DS_Store
 
 # Build directory
-/public
+# /public
 .DS_Store
