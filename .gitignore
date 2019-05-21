@@ -5,6 +5,9 @@ yarn-error.log
 package-lock.json
 yarn.lock
 
+.prettierrc
+.DS_Store
+
 # Build directory
-/public
+# /public
 .DS_Store
