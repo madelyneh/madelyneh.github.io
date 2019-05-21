@@ -7,6 +7,8 @@ import resumePicture from '../images/DSC_1168.jpg'
 import computerClose from '../images/computerClose.jpg'
 import meSmiling from '../images/meSmiling.jpg'
 
+import hangMan from '../images/HangMan.png'
+
 class Main extends React.Component {
   render() {
 
@@ -17,32 +19,52 @@ class Main extends React.Component {
 
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Resume</h2>
-          <span className="image main"><img src={resumePicture} alt="" /></span>
+          <span className="image main"><img src={resumePicture} alt="Madelyn Helton" /></span>
           <span className="image fit">
-            <img src={resume} alt="" />
-            <img src={resumeEdu} alt="" />
+            <img src={resume} alt="Madelyn Helton's Resume" />
+            <img src={resumeEdu} alt="Madelyn Helton's Education" />
           </span>
           {close}
         </article>
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Work</h2>
+          <h2 className="major">Portfolio</h2>
           <span className="image main"><img src={computerClose} alt="" /></span>
-          <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+            {/* <div className="table-wrapper"> */}
+              <table>
+                <thead>
+                  <tr>
+                    <th>Word Guess</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href="https://madelyneh.github.io/Word-Guess-Game/" target="_blank" rel="noreferrer"><img src={hangMan} alt="Word Guess"/></a>
+                    </td>
+                    <td>
+                      <a href="https://www.linkedin.com/in/madelyn-helton-67767b129/" target="_blank" rel="noreferrer" className="icon fa-linkedin"><span className="label">linkedIn</span></a>
+
+                    </td>
+                    </tr>
+                </tbody>
+               
+              </table>
+
+            {/* </div> */}
           {close}
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
           <span className="image main"><img src={meSmiling} alt="" /></span>
-          <blockquote>
+          {/* <blockquote> */}
             <p>Front end developer who has simplifying the user experience in mind. Recently graduated from the UT coding bootcamp where I learned JavaScript, jQuery... etc.</p>
 
             <p>Starting my first job at 15 and working through high school and college helped to refine my work ethic and time management skills.</p> 
 
             <p> Over 8 years in leadership positions, from being a customer service manager at a retail store to the store manager of a pet store. All of these positions were achieved because of my determination, leadership, problem solving, communication, and organizational skills.</p>
-            </blockquote>
+            {/* </blockquote> */}
           {close}
         </article>
 

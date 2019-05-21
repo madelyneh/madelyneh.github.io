@@ -5,8 +5,8 @@ import headShot from '../images/headShot.jpg'
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div className="logo">
-            {/* <span className="icon fa-code"></span> */}
-            <span className="main-logo" ><img src={headShot} alt="" /></span>
+            <span className="icon fa-code"></span>
+            {/* <span className="main-logo" ><img src={headShot} alt="" /></span> */}
         </div>
         <div className="content">
             <div className="inner">
@@ -19,7 +19,7 @@ const Header = (props) => (
             <ul>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('intro')}}>Resume</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Work</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Portfolio</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
             </ul>
         </nav>
