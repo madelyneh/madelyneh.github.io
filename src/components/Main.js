@@ -30,7 +30,7 @@ class Main extends React.Component {
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Portfolio</h2>
           <span className="image main"><img src={computerClose} alt="" /></span>
-            {/* <div className="table-wrapper"> */}
+            <div className="table-wrapper">
               <table>
                 <thead>
                   <tr>
@@ -51,7 +51,7 @@ class Main extends React.Component {
                
               </table>
 
-            {/* </div> */}
+            </div>
           {close}
         </article>
 
