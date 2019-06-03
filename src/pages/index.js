@@ -89,6 +89,10 @@ class IndexPage extends React.Component {
     }
   }
 
+  onClick = ({target: {innerHTML}}) => {
+    console.log(`Clicked on "${innerHTML}"!`); // eslint-disable-line
+  }
+
   render() {
     return (
       <Layout location={this.props.location}>
@@ -102,6 +106,7 @@ class IndexPage extends React.Component {
               article={this.state.article}
               onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
+              onClick={this.onClick}
             />
             <Footer timeout={this.state.timeout} />
           </div>
