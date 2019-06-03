@@ -160,7 +160,7 @@ class Main extends React.Component {
           <h2 className="major">About</h2>
           <span className="image main"><img src={meSmiling} alt="" /></span>
           {/* <blockquote> */}
-            <p>Front end developer who has simplifying the user experience in mind. Recently graduated from the UT coding bootcamp where I learned JavaScript, jQuery... etc.</p>
+            <p>Front end developer who has simplifying the user experience in mind. Recently graduated from the UT coding bootcamp where I learned JavaScript (ES6+), ReactJS, HTML, CSS, JQuery, Materialize, Bootstrap, Node.js, MySQL, MongoDB and how to work with APIs.</p>
 
             <p>Starting my first job at 15 and working through high school and college helped to refine my work ethic and time management skills.</p> 
 
@@ -171,9 +171,11 @@ class Main extends React.Component {
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <p>
-            <button onClick={this.props.onClick}>madelyn.e.helton@gmail.com</button>
-          </p>
+          
+            <blockquote onClick={this.props.onClick}>
+              <h4>madelyn.e.helton@gmail.com</h4>
+            </blockquote>
+          
 
 
           {/* <form method="post" action="#">
